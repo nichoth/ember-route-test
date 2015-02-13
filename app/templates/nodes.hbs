@@ -1,0 +1,5 @@
+nodes.hbs
+{{#each thing in model}}
+  <li> {{#link-to 'node' thing.id}} {{thing.name}} {{/link-to}}</li>
+{{/each}}
+{{outlet}}

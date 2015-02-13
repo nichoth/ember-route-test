@@ -1,0 +1,8 @@
+node template
+<h4>{{model.name}}</h4>
+<ul>
+  {{#each related in model.relatedModels}}
+    <li>{{related.id}}, {{related.name}}</li>
+  {{/each}}
+</ul>
+{{outlet}}
